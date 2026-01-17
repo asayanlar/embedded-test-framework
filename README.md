@@ -19,25 +19,27 @@ This project simulates an embedded data processing pipeline with multiple produc
 
 ## Planned Project Structure
 
+```
 embedded-test-framework/
-├── LICENSE                 # MIT License
-├── README.md               # Project description and instructions
+├── LICENSE                   # MIT License
+├── README.md                 # Project description and instructions
 │
-├── src/                    # Source files
-│   ├── main.cpp            # Entry point: starts simulation, threads, and logger
-│   ├── sensor_data.h       # Defines SensorSample struct (id, values, timestamp)
-│   ├── thread_safe_queue.h # Thread-safe queue template class
+├── src/                      # Source files
+│   ├── main.cpp              # Entry point: starts simulation, threads, and logger
+│   ├── sensor_data.h         # Defines SensorSample struct (id, values, timestamp)
+│   ├── thread_safe_queue.h   # Thread-safe queue template class
 │   ├── thread_safe_queue.cpp # Optional: separate implementation
-│   ├── producer.h          # Producer thread class (generates SensorSample)
+│   ├── producer.h            # Producer thread class (generates SensorSample)
 │   ├── producer.cpp
-│   ├── consumer.h          # Consumer thread class (processes SensorSample)
+│   ├── consumer.h            # Consumer thread class (processes SensorSample)
 │   ├── consumer.cpp
-│   ├── logger.h            # Logger/monitoring class
+│   ├── logger.h              # Logger/monitoring class
 │   ├── logger.cpp
-│   └── utils.h             # Optional helpers (timing, random faults, etc.)
+│   └── utils.h               # Optional helpers (timing, random faults, etc.)
 │
-├── include/                # Optional: header-only files
-└── build/                  # Optional: compiled binaries output folder
+├── include/                  # Optional: header-only files
+└── build/                    # Optional: compiled binaries output folder
+```
 
 ---
 
